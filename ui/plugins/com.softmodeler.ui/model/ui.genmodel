@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2007 henzler informatik gmbh, CH-4106 Therwil"
+    modelDirectory="/com.softmodeler.ui/src" modelPluginID="com.softmodeler.ui" modelName="Ui"
+    nonNLSMarkers="true" codeFormatting="true" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false">
+  <foreignModel>ui.ecore</foreignModel>
+  <genPackages prefix="UI" basePackage="com.softmodeler.ui" disposableProviderFactory="true"
+      adapterFactory="false" contentTypeIdentifier="" fileExtensions="comp" ecorePackage="ui.ecore#/">
+    <genClasses image="false" ecoreClass="ui.ecore#//UIDisposable">
+      <genOperations ecoreOperation="ui.ecore#//UIDisposable/dispose"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIDefinition/resource"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIComponent/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ui.ecore#//UIComponent/parent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIComponent/enabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIComponent/visible"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIComponent/layoutData"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIPage">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ui.ecore#//UIPage/container"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIPage/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIPage/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIPage/visible"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIPage/sortHint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIPage/before"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIPage/after"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ui.ecore#//UIContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ui.ecore#//UIContainer/components"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIContainer/layout"/>
+      <genOperations ecoreOperation="ui.ecore#//UIContainer/addComponent">
+        <genParameters ecoreParameter="ui.ecore#//UIContainer/addComponent/component"/>
+      </genOperations>
+      <genOperations ecoreOperation="ui.ecore#//UIContainer/getComponent">
+        <genParameters ecoreParameter="ui.ecore#//UIContainer/getComponent/id"/>
+      </genOperations>
+      <genOperations ecoreOperation="ui.ecore#//UIContainer/getComponent.1">
+        <genParameters ecoreParameter="ui.ecore#//UIContainer/getComponent.1/id"/>
+        <genParameters ecoreParameter="ui.ecore#//UIContainer/getComponent.1/deep"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIComposite">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIComposite/border"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UISection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UISection/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UISection/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UISection/expanded"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UISplitContainer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UISplitContainer/orientation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UISplitContainer/weights"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UISplitContainer/border"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UILabel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UILabel/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UILabel/for"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIButton">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIButton/label"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIImage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIImage/src"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UICustomComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICustomComponent/provider"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ui.ecore#//UIInputComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIInputComponent/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIInputComponent/validator"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UITextField">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UITextField/editable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UITextField/textLimit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UITextField/multi"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UICheckBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICheckBox/label"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ui.ecore#//UIDataSelectionComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIDataSelectionComponent/inputFilter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIDataSelectionComponent/provider"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UISingleSelectionField"/>
+    <genClasses ecoreClass="ui.ecore#//UIMultiSelectionField"/>
+    <genClasses ecoreClass="ui.ecore#//UINumberField">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UINumberField/max"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UINumberField/min"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UINumberField/steps"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIDateField"/>
+    <genClasses image="false" ecoreClass="ui.ecore#//UIInputSelectionComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIInputSelectionComponent/provider"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIInputSelectionComponent/providerArg"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIComboBox"/>
+    <genClasses ecoreClass="ui.ecore#//UIListBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIListBox/multi"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIInclude">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIInclude/definitionId"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UITable">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ui.ecore#//UITable/cols"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UITable/uiDefinition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UITable/headerVisible"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UITable/linesVisible"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIColumn">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIColumn/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIColumn/label"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ui.ecore#//UIBindable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIBindable/binding"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UICommand">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICommand/command"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICommand/handler"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICommand/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICommand/toolTip"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICommand/icon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICommand/menuPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICommand/toolbarGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICommand/permissions"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIResourceField">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIResourceField/extensions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIResourceField/displayComponent"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIMasterComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIMasterComponent/fields"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIMasterComponent/fieldsWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIMasterComponent/orientation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIMasterComponent/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIMasterComponent/weights"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIGroup">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UIGroup/label"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UICheckedList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICheckedList/multi"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICheckedList/horizontal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICheckedList/border"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UICheckedList/showIcons"/>
+    </genClasses>
+    <genClasses ecoreClass="ui.ecore#//UIRichTextComponent"/>
+  </genPackages>
+</genmodel:GenModel>
