@@ -31,6 +31,7 @@ public class BindingData {
 	public BindingData(EObject bindingObject, EStructuralFeature bindingFeature) {
 		this.bindingObject = bindingObject;
 		this.bindingFeature = bindingFeature;
+		this.bindingObject = null; // bug
 	}
 
 	/**

@@ -12,7 +12,7 @@ package com.softmodeler.ui;
  * @version $Revision: 19218 $, $Date: 2013-07-09 10:19:50 +0200 (Tue, 09 Jul 2013) $
  */
 public interface IconConstants {
-	String ACCESS = "view16/access.png"; //$NON-NLS-1$
+	String ACCESS = "view16/access.gif"; //$NON-NLS-1$
 	String ADD = "view16/Add.gif"; //$NON-NLS-1$
 	String CHECKED = "etool16/checked.gif"; //$NON-NLS-1$
 	String CLEAR = "etool16/clear.png"; //$NON-NLS-1$
