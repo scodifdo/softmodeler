@@ -20,6 +20,7 @@ public class LaunchManagerImpl extends LaunchManager {
 	public void openExternalBrowser(String url) {
 		Program.launch(url);
 		// MASTER NEUE VERSION
+		// more work done
 	}
 
 	@Override
