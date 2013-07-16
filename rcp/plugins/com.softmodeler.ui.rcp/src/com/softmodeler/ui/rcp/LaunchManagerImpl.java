@@ -19,6 +19,7 @@ public class LaunchManagerImpl extends LaunchManager {
 	@Override
 	public void openExternalBrowser(String url) {
 		Program.launch(url);
+		// BIG CHANGE
 	}
 
 	@Override
